@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     var bounds = map.getBounds();
     var box = [bounds.getSouth(), bounds.getWest(), bounds.getNorth(), bounds.getEast()];
-    var url = 'http://overpass-api.de/api/interpreter?data=[out:json];((way(' + box.join(',') + ')[%22building%22]);(._;node(w);););out;';
+    var url = 'https://overpass-api.de/api/interpreter?data=[out:json];((way(' + box.join(',') + ')[%22building%22]);(._;node(w);););out;';
 
     function filterData(data) {
       var nodes = _.filter(data.elements, function (item) {
