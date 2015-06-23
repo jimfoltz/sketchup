@@ -1,1 +1,1 @@
-web: coffee web.coffee
+web: PORT=$PORT node web.js
